@@ -1,0 +1,35 @@
+/*HEAEDER*/
+
+header {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 24px;
+  padding-bottom: 24px;
+  padding-left: 2rem;
+  padding-right: 42rem;
+  background-color: #45b6c2;
+  align-items: center;
+}
+header a {
+  color: black;
+  text-decoration: none;
+}
+
+nav a:hover {
+  color: #d5dbdf;
+}
+
+header button {
+  border: 1px solid white;
+  text-align: center;
+  text-decoration: none;
+  margin: 0px;
+  background-color: #747b95;
+  padding: 8px 12px;
+  border-radius: 2px;
+  color: black;
+}
+
+header button:hover {
+  background-color: white;
+}
