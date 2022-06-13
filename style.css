@@ -1,5 +1,114 @@
-/*HEAEDER*/
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
 
+img {
+  width: 100%;
+}
+
+li {
+  list-style: none;
+}
+
+h1 {
+  font-family: "Chalkboard";
+}
+
+h2 {
+  font-family: "Chalkboard";
+  margin-right: 67em;
+  font-size: 1rem;
+  font-weight: 700;
+  top: 35px;
+  gap: 10px;
+  padding: 1rem 1rem;
+  line-height: 5px;
+  border-radius: 10px;
+  background-color: #699276;
+  color: rgb(255, 255, 255);
+  border: 5px solid rgb(149, 184, 188);
+}
+@media (max-width: 599px) {
+  h2 {
+    font-family: "Chalkboard";
+    margin-right: 0.1em;
+    text-align: center;
+    font-size: 0.78rem;
+    font-weight: 700;
+    top: 35px;
+    gap: 10px;
+    padding: 1rem 6rem;
+    line-height: 5px;
+    border-radius: 10px;
+    background-color: #699276;
+    color: rgb(255, 255, 255);
+    border: 5px solid rgb(149, 184, 188);
+  }
+}
+@media (min-width: 600px) {
+  h2 {
+    font-family: "Chalkboard";
+    margin-right: 0.00001em;
+    text-align: center;
+    font-size: 1rem;
+    font-weight: 700;
+    top: 35px;
+    gap: 10px;
+    text-align: left;
+    padding: 1rem 5rem;
+    line-height: 5px;
+    border-radius: 10px;
+    background-color: #699276;
+    color: rgb(255, 255, 255);
+    border: 5px solid rgb(149, 184, 188);
+  }
+}
+
+h4 {
+  font-family: Chalkboard;
+  font-weight: 600;
+  font-style: normal;
+  font-size: 1rem;
+}
+
+p {
+  font-size: 1rem;
+}
+
+h2,
+h4 {
+  margin-bottom: 10px;
+}
+
+a,
+p,
+button {
+  font-family: Chalkboard;
+  font-weight: 300;
+  font-style: normal;
+}
+
+a {
+  font-weight: 500;
+  text-decoration: none;
+}
+
+button a {
+  font-weight: 600;
+  font-size: 0.85rem;
+}
+
+section {
+  margin-bottom: 25px;
+}
+body {
+  background-color: #b8d2c2;
+  color: #262625;
+}
+
+/*Header*/
 header {
   display: flex;
   justify-content: space-between;
@@ -7,29 +116,356 @@ header {
   padding-bottom: 24px;
   padding-left: 2rem;
   padding-right: 42rem;
-  background-color: #45b6c2;
   align-items: center;
-}
-header a {
-  color: black;
-  text-decoration: none;
+  background-color: rgb(98, 98, 85);
 }
 
-nav a:hover {
-  color: #d5dbdf;
+header a {
+  color: rgb(255, 255, 255);
+  font-family: "chalkboard";
+}
+.menu_punkter {
+  top: 35px;
+  gap: 10px;
+  padding: 1rem 4rem;
+  font-family: "chalkboard";
+  line-height: 5px;
+  border-radius: 15px;
+  background-color: #699276;
+  border: 5px solid rgb(149, 184, 188);
+}
+
+.logo {
+  font-size: 1.5rem;
+  font-weight: 700;
+  top: 35px;
+  gap: 10px;
+  padding: 1rem 1rem;
+  line-height: 5px;
+  border-radius: 15px;
+  background-color: #699276;
+  color: rgb(255, 255, 255);
+  border: 5px solid rgb(149, 184, 188);
 }
 
 header button {
-  border: 1px solid white;
+  border: 3px solid white;
   text-align: center;
-  text-decoration: none;
-  margin: 0px;
   background-color: #747b95;
+  margin-left: 23em;
+  border-radius: 4px;
   padding: 8px 12px;
-  border-radius: 2px;
   color: black;
 }
 
-header button:hover {
+/* MENU */
+@media (max-width: 599px) {
+  .hidden {
+    display: none;
+  }
+
+  .menuknap {
+    padding-left: 1em;
+  }
+
+  #menu {
+    position: relative;
+  }
+
+  .menu_punkter {
+    position: absolute;
+    bottom: -86px;
+    right: 0;
+    background-color: #9dadb5;
+    padding: 10px 18px;
+  }
+}
+@media (min-width: 600px) {
+  .menu_punkter {
+    display: flex;
+    flex-direction: row;
+    gap: 1.3rem;
+  }
+
+  .menuknap {
+    display: none;
+  }
+}
+/*Side 1*/
+#forside {
+  width: 100%;
+  /* position: relative; */
+}
+
+#forside h2 {
+  margin: 0px;
+}
+
+#splash {
+  width: 100%;
+  height: 100vh;
+  /* position: relative; */
+  top: 0%;
+  left: 0%;
+  background-image: url(img/splash.webp);
+  background-size: cover;
+  background-position: 55% 100%;
+}
+
+.overskrift {
+  position: absolute;
+  color: #887a50;
+  top: 30%;
+  left: 9%;
+  font-size: clamp(4rem, 16vw - 2rem, 8rem);
+}
+
+.navn {
+  position: absolute;
+  color: #595340;
+  top: 48%;
+  left: 9.5%;
+  font-size: clamp(1rem, 6vw - 1.2rem, 2.5rem);
+}
+
+@media (max-width: 600px) {
+  .navn {
+    position: absolute;
+    top: 39%;
+    left: 9.5%;
+  }
+}
+
+@media (max-width: 900px) and (min-width: 600px) {
+  .navn {
+    position: absolute;
+    top: 45%;
+    left: 9.5%;
+  }
+}
+
+/* Temaer */
+
+@media (max-width: 750px) {
+  img {
+    margin-bottom: 10px;
+  }
+}
+
+/* Tema 2 - Web */
+#section_Web img {
+  margin-bottom: 5px;
+}
+
+#Web h2 {
+  margin-top: 10px;
+  margin-right: 69em;
+  font-size: 1rem;
+  font-weight: 700;
+  top: 35px;
+  gap: 10px;
+  padding: 1rem 1rem;
+  line-height: 5px;
+  border-radius: 10px;
+  background-color: #699276;
+  color: rgb(255, 255, 255);
+  border: 5px solid rgb(149, 184, 188);
+}
+@media (max-width: 599px) {
+  #Web h2 {
+    font-family: "Chalkboard";
+    margin-right: 0.1em;
+    text-align: center;
+    font-size: 0.78rem;
+    font-weight: 700;
+    top: 35px;
+    gap: 10px;
+    padding: 1rem 6rem;
+    line-height: 5px;
+    border-radius: 10px;
+    background-color: #699276;
+    color: rgb(255, 255, 255);
+    border: 5px solid rgb(149, 184, 188);
+  }
+}
+@media (min-width: 600px) {
+  #Web h2 {
+    font-family: "Chalkboard";
+    margin-right: 0.00001em;
+    text-align: center;
+    font-size: 1rem;
+    font-weight: 700;
+    top: 35px;
+    gap: 10px;
+    text-align: left;
+    padding: 1rem 5rem;
+    line-height: 5px;
+    border-radius: 10px;
+    background-color: #699276;
+    color: rgb(255, 255, 255);
+    border: 5px solid rgb(149, 184, 188);
+  }
+}
+
+@media (min-width: 750px) {
+  #section_Web {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+    gap: 20px;
+  }
+
+  .tekst_web {
+    grid-column: 3/4;
+    grid-row: 1/2;
+  }
+
+  .img_web1 {
+    grid-column: 1/2;
+    grid-row: 1/2;
+  }
+
+  .img_web2 {
+    grid-column: 2/3;
+    grid-row: 1/2;
+  }
+}
+
+/* Tema 3 - UX */
+
+@media (min-width: 750px) {
+  #section_UX {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 10px 1fr;
+    column-gap: 10px;
+  }
+
+  .prototype {
+    grid-row: 1/2;
+  }
+
+  .tekst_UX {
+    grid-column: 3/4;
+    grid-row: 1/2;
+  }
+
+  .UX_img1 {
+    grid-column: 1/2;
+    grid-row: 2/4;
+  }
+
+  .uxskitser {
+    grid-column: 2/3;
+    grid-row: 1/4;
+  }
+
+  .UX_img3 {
+    grid-column: 2/3;
+    grid-row: 2/4;
+  }
+}
+
+/* Tema 4 - Animation */
+@media (min-width: 750px) {
+  #section_Animation {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+    gap: 20px;
+  }
+
+  .tekst_Animation {
+    grid-column: 1/2;
+    grid-row: 1/2;
+  }
+
+  .billede_1 {
+    grid-column: 2/3;
+    grid-row: 1/2;
+  }
+
+  .billede_2 {
+    grid-column: 3/4;
+    grid-row: 1/2;
+  }
+}
+
+/* Tema 5 - Indhold  */
+@media (min-width: 750px) {
+  #section_Indhold_pilot {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+    gap: 10px;
+  }
+
+  .horisontal1 {
+    grid-column: 1/2;
+    grid-row: 1/2;
+    width: 200px;
+  }
+  .horisontal2 {
+    grid-column: 2/3;
+    grid-row: 1/2;
+    width: 200px;
+  }
+
+  .tekst_pilotprojekt {
+    grid-column: 3/4;
+  }
+
+  #section_Indhold_redesign {
+    display: grid;
+    grid-template-columns: 1fr 50px 2fr;
+    margin-top: 30px;
+  }
+
+  .tekst_redesign {
+    grid-column: 1/2;
+  }
+
+  .timscookievideo {
+    grid-column: 3/4;
+  }
+}
+
+/* Video */
+video {
+  width: 100%;
+  height: auto;
+}
+/* ***BTN STYLE*** */
+.button {
+  text-align: center;
+}
+
+.button a {
+  color: rgb(254, 254, 254);
+}
+
+button {
+  border: none;
+  /* text-align: center; */
+  text-decoration: none;
+  display: inline-block;
+  background-color: #473cc1;
+  padding: 8px 25px;
+  border-radius: 4px;
+  margin: 10px 0px;
+}
+
+button:hover {
+  box-shadow: 0px 0px 10px -5px #000000;
   background-color: white;
+  color: none;
+}
+
+/* *******Footer******** */
+footer {
+  background-color: #4fdfcb;
+  margin-top: 50px;
+  min-height: 40px;
+  padding-top: 10px;
+  text-align: center;
 }
