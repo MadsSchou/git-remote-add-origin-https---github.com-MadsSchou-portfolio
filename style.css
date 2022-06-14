@@ -25,7 +25,6 @@ header {
 
   grid-template-columns: repeat(3, 1fr);
   padding: 1rem 2rem 1rem 1rem;
-  /* border: 1px solid black; */
 }
 
 header a {
@@ -56,7 +55,6 @@ header ul {
 /*MENU*/
 
 .main-menu.shown ul {
-  /* Vis menu-listen, når klassen ".shown" er til stede */
   border-top: 1px solid #000;
   padding-top: 0.3rem;
   padding-left: 1em;
@@ -68,18 +66,18 @@ header ul {
 }
 
 .toggle-btn {
-  display: block; /* Vis knappen, når viewporten maksimalt er 600px */
+  display: block;
   cursor: pointer;
   all: unset;
   padding-left: 5rem;
 }
 
 .main-menu {
-  display: contents; /* Fjern ".main-menu"-boksen fra ligningen, når viewporten maksimalt er 600px, men behold børnene, så disse deltager i flex-kontekten */
+  display: contents;
 }
 
 .main-menu ul {
-  display: none; /* Fjern menu-listen som standard */
+  display: none;
 }
 
 header ul li a:hover {
