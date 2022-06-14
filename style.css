@@ -40,7 +40,7 @@ header a {
   gap: 10px;
   padding: 1rem 1rem;
   line-height: 5px;
-  border-radius: 3px;
+  border-radius: 5px;
   background-color: #6a98ab;
   color: rgb(255, 255, 255);
   border: 5px solid rgb(149, 184, 188);
@@ -132,7 +132,7 @@ h2 {
   gap: 10px;
   padding: 1rem 1rem;
   line-height: 5px;
-  border-radius: 10px;
+  border-radius: 5px;
   background-color: #6a98ab;
   color: rgb(255, 255, 255);
   border: 5px solid rgb(149, 184, 188);
@@ -149,7 +149,7 @@ h2 {
     gap: 10px;
     padding: 1rem 6rem;
     line-height: 5px;
-    border-radius: 3px;
+    border-radius: 5px;
     background-color: #6a98ab;
     color: rgb(255, 255, 255);
     border: 5px solid rgb(149, 184, 188);
@@ -167,7 +167,7 @@ h2 {
     text-align: left;
     padding: 1rem 5rem;
     line-height: 5px;
-    border-radius: 3px;
+    border-radius: 5px;
     background-color: #6a98ab;
     color: rgb(255, 255, 255);
     border: 5px solid rgb(149, 184, 188);
@@ -222,7 +222,7 @@ body {
   position: absolute;
   color: #6a98ab;
   top: 30%;
-  left: 9%;
+  left: 28%;
   font-size: clamp(4rem, 16vw - 2rem, 8rem);
 }
 
@@ -230,23 +230,30 @@ body {
   position: absolute;
   color: #ffffff;
   top: 48%;
-  left: 9.5%;
+  left: 39%;
   font-size: clamp(1rem, 6vw - 1.2rem, 2.5rem);
 }
 
 @media (max-width: 600px) {
   .navn {
     position: absolute;
-    top: 39%;
-    left: 9.5%;
+    top: 40%;
+    left: 39%;
   }
 }
 
-@media (max-width: 900px) and (min-width: 600px) {
+@media (min-width: 600px) {
   .navn {
     position: absolute;
     top: 45%;
-    left: 9.5%;
+    left: 40%;
+  }
+  .overskrift {
+    position: absolute;
+    color: #6a98ab;
+    top: 25%;
+    left: 35%;
+    font-size: clamp(4rem, 16vw - 2rem, 8rem);
   }
 }
 
@@ -274,7 +281,7 @@ body {
     gap: 10px;
     padding: 1rem 6rem;
     line-height: 5px;
-    border-radius: 10px;
+    border-radius: 5px;
     background-color: #6a98ab;
     color: rgb(255, 255, 255);
     border: 5px solid rgb(149, 184, 188);
@@ -294,7 +301,7 @@ body {
     text-align: left;
     padding: 1rem 5rem;
     line-height: 5px;
-    border-radius: 3px;
+    border-radius: 5px;
     background-color: #6a98ab;
     color: rgb(255, 255, 255);
     border: 5px solid rgb(149, 184, 188);
@@ -429,7 +436,7 @@ video {
 }
 
 .button a {
-  color: rgb(254, 254, 254);
+  color: rgb(255, 255, 255);
 }
 
 button {
@@ -439,7 +446,6 @@ button {
   display: inline-block;
   background-color: #ab8459;
   padding: 8px 25px;
-  border-radius: 4px;
   margin: 10px 0px;
 }
 
@@ -452,7 +458,10 @@ button {
   margin-top: 0px;
 }
 .mit_cv {
-  padding-top: 15em;
+  margin: 3em;
+  padding-top: 0.2em;
+  border: 3px solid;
+  padding-left: 3em;
 }
 @media (min-width: 600px) {
   .margin {
