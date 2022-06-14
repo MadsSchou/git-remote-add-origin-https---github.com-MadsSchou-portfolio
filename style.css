@@ -21,7 +21,7 @@ header {
   padding-left: 2rem;
   padding-right: 42rem;
   align-items: center;
-  background-color: rgb(98, 98, 85);
+  background-color: #b3e4f8;
 
   grid-template-columns: repeat(3, 1fr);
   padding: 1rem 2rem 1rem 1rem;
@@ -30,7 +30,7 @@ header {
 
 header a {
   color: rgb(0, 0, 0);
-  font-family: "chalkboard";
+  font-family: "Open Sans";
 }
 
 .logo {
@@ -41,7 +41,7 @@ header a {
   padding: 1rem 1rem;
   line-height: 5px;
   border-radius: 3px;
-  background-color: #f49f1c;
+  background-color: #6a98ab;
   color: rgb(255, 255, 255);
   border: 5px solid rgb(149, 184, 188);
 }
@@ -120,11 +120,11 @@ header ul li a:hover {
 
 /*Typografi og farver*/
 h1 {
-  font-family: "Chalkboard";
+  font-family: "Open Sans";
 }
 
 h2 {
-  font-family: "Chalkboard";
+  font-family: "Open Sans";
   margin-right: 67em;
   font-size: 1rem;
   font-weight: 700;
@@ -133,13 +133,14 @@ h2 {
   padding: 1rem 1rem;
   line-height: 5px;
   border-radius: 10px;
-  background-color: #f49f1c;
+  background-color: #6a98ab;
   color: rgb(255, 255, 255);
   border: 5px solid rgb(149, 184, 188);
 }
 @media (max-width: 599px) {
   h2 {
-    font-family: "Chalkboard";
+    font-family: "Open Sans";
+
     margin-right: 0.1em;
     text-align: center;
     font-size: 0.78rem;
@@ -149,14 +150,14 @@ h2 {
     padding: 1rem 6rem;
     line-height: 5px;
     border-radius: 3px;
-    background-color: #f49f1c;
+    background-color: #6a98ab;
     color: rgb(255, 255, 255);
     border: 5px solid rgb(149, 184, 188);
   }
 }
 @media (min-width: 600px) {
   h2 {
-    font-family: "Chalkboard";
+    font-family: "Open Sans";
     margin-right: 0.00001em;
     text-align: center;
     font-size: 1rem;
@@ -167,14 +168,14 @@ h2 {
     padding: 1rem 5rem;
     line-height: 5px;
     border-radius: 3px;
-    background-color: #f49f1c;
+    background-color: #6a98ab;
     color: rgb(255, 255, 255);
     border: 5px solid rgb(149, 184, 188);
   }
 }
 
 h4 {
-  font-family: Chalkboard;
+  font-family: "Open Sans";
   font-weight: 600;
   font-style: normal;
   font-size: 1rem;
@@ -192,7 +193,7 @@ h4 {
 a,
 p,
 button {
-  font-family: Chalkboard;
+  font-family: "Open Sans";
   font-weight: 300;
   font-style: normal;
 }
@@ -211,35 +212,15 @@ section {
   margin-bottom: 25px;
 }
 body {
-  background-color: #030e4f;
+  background-color: #f7d7b2;
 
-  color: #ffffff;
+  color: black;
 }
 
 /*Side 1*/
-#forside {
-  width: 100%;
-  /* position: relative; */
-}
-
-#forside h2 {
-  margin: 0px;
-}
-
-#splash {
-  width: 100%;
-  height: 100vh;
-
-  top: 0%;
-  left: 0%;
-  background-image: url(img/splash.webp);
-  background-size: cover;
-  background-position: 55% 100%;
-}
-
 .overskrift {
   position: absolute;
-  color: #deae5b;
+  color: #6a98ab;
   top: 30%;
   left: 9%;
   font-size: clamp(4rem, 16vw - 2rem, 8rem);
@@ -284,7 +265,7 @@ body {
 
 @media (max-width: 599px) {
   #Web h2 {
-    font-family: "Chalkboard";
+    font-family: "Open Sans";
     margin-right: 0.1em;
     text-align: center;
     font-size: 0.78rem;
@@ -294,14 +275,14 @@ body {
     padding: 1rem 6rem;
     line-height: 5px;
     border-radius: 10px;
-    background-color: #f49f1c;
+    background-color: #6a98ab;
     color: rgb(255, 255, 255);
     border: 5px solid rgb(149, 184, 188);
   }
 }
 @media (min-width: 600px) {
   #Web h2 {
-    font-family: "Chalkboard";
+    font-family: "Open Sans";
     margin-top: 10px;
 
     margin-right: 0.00001em;
@@ -314,7 +295,7 @@ body {
     padding: 1rem 5rem;
     line-height: 5px;
     border-radius: 3px;
-    background-color: #f49f1c;
+    background-color: #6a98ab;
     color: rgb(255, 255, 255);
     border: 5px solid rgb(149, 184, 188);
   }
@@ -329,17 +310,13 @@ body {
   }
 
   .tekst_web {
-    grid-column: 3/4;
+    grid-column: 2/4;
     grid-row: 1/2;
+    padding-top: 5rem;
   }
 
-  .img_web1 {
+  .billede_1_web {
     grid-column: 1/2;
-    grid-row: 1/2;
-  }
-
-  .img_web2 {
-    grid-column: 2/3;
     grid-row: 1/2;
   }
 }
@@ -383,23 +360,23 @@ body {
 @media (min-width: 750px) {
   #section_Animation {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 1fr;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 2fr;
     gap: 20px;
   }
 
   .tekst_Animation {
-    grid-column: 1/2;
-    grid-row: 1/2;
+    grid-column: 1/4;
+    grid-row: 2/2;
   }
 
   .billede_1 {
-    grid-column: 2/3;
-    grid-row: 1/2;
+    grid-column: 1/1;
+    grid-row: 1/1;
   }
 
   .billede_2 {
-    grid-column: 3/4;
+    grid-column: 2/4;
     grid-row: 1/2;
   }
 }
@@ -460,7 +437,7 @@ button {
   /* text-align: center; */
   text-decoration: none;
   display: inline-block;
-  background-color: #473cc1;
+  background-color: #ab8459;
   padding: 8px 25px;
   border-radius: 4px;
   margin: 10px 0px;
@@ -501,7 +478,7 @@ button {
 }
 /* *******Footer******** */
 footer {
-  background-color: #f49f1c;
+  background-color: #b3e4f8;
   margin-top: 50px;
   min-height: 40px;
   padding-top: 10px;
