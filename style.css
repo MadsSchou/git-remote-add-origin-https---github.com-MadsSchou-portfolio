@@ -428,18 +428,19 @@ video {
   width: 100%;
   height: auto;
 }
-/* ***BTN STYLE*** */
-.button {
+/* Knap til undersider */
+.knap {
   text-align: center;
 }
 
-.button a {
+.knap a {
   color: rgb(255, 255, 255);
-  border: none;
-  /* text-align: center; */
+  font-family: "Open Sans";
+  font-weight: 700;
   text-decoration: none;
   display: inline-block;
   background-color: #ab8459;
+  border-radius: 5px;
   padding: 8px 25px;
   margin: 10px 0px;
 }
