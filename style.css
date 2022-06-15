@@ -435,9 +435,6 @@ video {
 
 .button a {
   color: rgb(255, 255, 255);
-}
-
-button {
   border: none;
   /* text-align: center; */
   text-decoration: none;
